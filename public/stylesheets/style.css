@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: auto;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+    text-align: center;
+    font-family: "Philosopher";
+    color: wheat;
+}
+
+html {
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1509024644558-2f56ce76c490?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=dario-veronesi-lUO-BjCiZEA-unsplash.jpg&w=2400");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    height: 100%;
+    background-attachment: fixed;
+    backdrop-filter: contrast(1.1);
+    padding: 10px;
+}
+
+#base {
+    
+}
+
+.box {
+    background: #0000008f;
+    padding: 20px;
+    border: solid 2px #fbb255;
+    border-radius: 10px;
+}
+button {
+    background: transparent;
+    font-family: "Cinzel";
+    font-variant: all-small-caps;
+    font-weight: 700;
+    border: 2px solid #ffdf7e;
+    color: #ffdf7e;
+    padding: 5px 7px;
+}
+
+#main {
+    width: 60%;
+    margin: auto;
+}
+
+#bar {
+display: flex;
+margin-bottom: 75px;
+}
+#bar button {
+    border: 0;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+#divider {
+    border: 1px solid #ffdf7e;
+    height: 0px;
+}
+
+#navbar-center {
+    flex-grow: 1;
+}
+#title-container {
+  position: absolute;
+  height: fit-content;
+  width: 100%;
+  z-index: -1;
+  top: 10px;
+}
+
+#title-bg {
+    background: #000000a8;
+    box-shadow: 0px 0px 20px 20px #000000a8;
+    width: fit-content;
+}
+
+#title {
+    font-family: "Cinzel Decorative";
+    font-size: 45px;
+    background-image: url("https://unsplash.com/photos/Ax6ggq8cSxw/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8Y29wcGVyJTIwdGV4dHVyZXxlbnwwfDB8fHwxNzM0ODEwNTg2fDA&force=true&w=2400");
+    background-repeat: no-repeat;
+  background-position: center center;
+-webkit-background-clip: text;
+-webkit-text-fill-color: #ffc76e4d;
+-webkit-text-stroke: 1px #8a5028;
+text-shadow: 2px 2px #ffc15f70;
+}
+
+p {
+    text-shadow: #ffdf7e 0px 0px 6px;
+}
