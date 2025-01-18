@@ -1,0 +1,41 @@
+* Nations
+
+** tUSCaR
+Values: Glory, Power, Dominion
+
+
+** SAIOTe
+*** Overview
+Values: Color, Life, Creativity, Freedom, Bohemianism
+Body:
+          + Skin: Fair, smooth and thinner than other races
+          + Hair: Various colors, typically blonde, red, or orange
+          + 
+
+*** Information
+
+**** Appendix
+(setq org-superstar-headline-bullets-list
+      '(?\s ?\s ?\s ?\s))
+(custom-set-faces `(default ((t (:background unspecified)))))
+(custom-set-faces `(default ((t (:foreground unspecified)))))
+(load-theme 'doom-gruvbox-light t)
+(sublimity-attractive-hide-fringes)
+(set-frame-font "Cinzel 17")
+(set-face-attribute
+'org-level-1 nil :foreground "default" :font "Cinzel Decorative" :height 5.0)
+(set-face-attribute
+'org-level-2 nil :font "Cinzel Decorative" :height 3.0 :foreground "default")
+(setq org-superstar-leading ?\s)
+(set-face-attribute
+'org-level-3 nil :font "Cinzel Decorative" :height 1.5 :foreground "default")
+(set-face-attribute
+'org-level-4 nil :font "Cinzel Decorative" :height 0.5 :foreground "default")
+(setq org-superstar-leading ?\s)
+(org-mode)
+(org-superstar-mode)
+(require 'sublimity-map)
+
+
+(setq 'default-frame-alist (delete '(background-color . *) 'default-frame-alist))
+

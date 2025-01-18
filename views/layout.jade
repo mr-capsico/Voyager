@@ -4,4 +4,19 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    div#base
+    div#bar
+      div#title-container
+        div#title-bg
+          h1#title(onclick="location.href = '/splash'") VOyageR
+      div.navbar#left
+        button.navbutton.left#home(onclick="location.href = '/'") Home
+        span.navbar.left#divider
+        button.navbutton.left#inventory(onclick="") Inventory
+    
+      div#navbar-center
+      div.navbar#right
+        button.navbutton.right#market Market
+        span.navbar.right#divider
+        button.navbutton.right#settings Settings
     block content

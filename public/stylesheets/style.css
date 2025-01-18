@@ -13,6 +13,7 @@
 
 html {
     height: 100%;
+    background-color: #202020;
     background-image: url("https://images.unsplash.com/photo-1509024644558-2f56ce76c490?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=dario-veronesi-lUO-BjCiZEA-unsplash.jpg&w=2400");
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,10 +33,25 @@ body {
 
 .box {
     background: #0000008f;
-    padding: 20px;
-    border: solid 2px #fbb255;
+    border: solid 2px #ffca88;
     border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px #ff8a23;
+
+    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    width: fit-content;
 }
+
+.box.important {
+    box-shadow: 0px 0px 20px 0px #ff8a23;
+}
+
+::selection {
+    color: #ffdf7e;
+    background-color: black;
+}
+
 button {
     background: transparent;
     font-family: "Cinzel";
@@ -60,9 +76,41 @@ margin-bottom: 75px;
     font-size: 20px;
     padding: 5px 15px;
 }
+
+#bar button.left {
+    color: #ffae4887;
+    padding: 5px 7px;
+    background-image: url("../images/gold_texture.jpg");
+    background-clip: text;
+    background-size: 50px;
+    text-shadow: 0px 0px 10px #da6e20;
+}
+
+#bar button.right {
+  color: #ffa08a9e;
+  padding: 5px 7px;
+  background-image: url("../images/white_fire_texture.jpg");
+  background-clip: text;
+  text-shadow: 0px 0px 10px #ff6440;
+  -webkit-text-stroke: 0.25px #ff8059;
+  filter: contrast(1.3) saturate(1.5) brightness(1.5);
+  background-size: 40px;
+}
+
+
 #divider {
-    border: 1px solid #ffdf7e;
-    height: 0px;
+    border-right: 1px solid;
+    display: inline-block;
+    height: 11px;
+    
+}
+
+#divider.left {
+    border-color: #ffae4857;
+}
+
+#divider.right {
+color: #ffb080;
 }
 
 #navbar-center {
@@ -82,18 +130,36 @@ margin-bottom: 75px;
     width: fit-content;
 }
 
-#title {
+#title, h1 {
     font-family: "Cinzel Decorative";
     font-size: 45px;
-    background-image: url("https://unsplash.com/photos/Ax6ggq8cSxw/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8Y29wcGVyJTIwdGV4dHVyZXxlbnwwfDB8fHwxNzM0ODEwNTg2fDA&force=true&w=2400");
+    background-image: url("../images/gold_texture.jpg");
     background-repeat: no-repeat;
-  background-position: center center;
--webkit-background-clip: text;
--webkit-text-fill-color: #ffc76e4d;
--webkit-text-stroke: 1px #8a5028;
-text-shadow: 2px 2px #ffc15f70;
+    background-position: center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffc76e4d;
+    -webkit-text-stroke: 1px #994e18;
+    text-shadow: 2px 2px #ffc15f70;
 }
 
-p {
+#title-bg.big {
+    background-color: #000000bb;
+    box-shadow: 0px 0px 50px 50px #000000bb;
+    border-radius: 40px;
+    margin-top: 35px;
+}
+
+#title.big {
+    font-size: 75px;
+    -webkit-text-fill-color: #ffc76e4d;
+}
+
+h1 {
+    font-family: "Cinzel Decorative";
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+p, pre, h2 {
     text-shadow: #ffdf7e 0px 0px 6px;
 }
