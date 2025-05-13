@@ -1,17 +1,21 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+import createError from 'http-errors';
+import express from "express";
+import path from 'path';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
+import { fileURLToPath } from 'url';
 
-var indexRouter = require('./routes/index');
-var msgRouter = require('./routes/message');
-var charRouter = require('./routes/char');
-var splashRouter = require('./routes/splash');
+import indexRouter from './routes/index.js';
+import msgRouter from './routes/message.js';
+import inventoryRouter from './routes/inventory.js';
+import charRouter from './routes/char.js';
+import splashRouter from './routes/splash.js';
 
 var app = express();
 
 // view engine setup
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
@@ -23,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/message', msgRouter);
+app.use('/inventory', inventoryRouter);
 app.use('/char', charRouter);
 app.use('/splash', splashRouter);
 
@@ -42,4 +47,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+export default app;

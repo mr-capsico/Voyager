@@ -2,6 +2,10 @@
 
 ** tUSCaR
 Values: Glory, Power, Dominion
+Body:
+          + Skin: Olive; Beige to light brown
+          + Hair: Various colors, typically blonde, red, or orange
+          + Eyes: Dark reddish-brown
 
 
 ** SAIOTe
@@ -9,10 +13,46 @@ Values: Glory, Power, Dominion
 Values: Color, Life, Creativity, Freedom, Bohemianism
 Body:
           + Skin: Fair, smooth and thinner than other races
-          + Hair: Various colors, typically blonde, red, or orange
-          + 
+          + Hair: Various colors, typically blonde, red/orange
+          + Eyes: Typically blue, green, or gray
 
-*** Information
+
+
+
+
+
+
+
+
+
+          
+* Characters
+
+** Adiantuinne Tribe
+*** Uimi Na-Hagousóirí
+(Autistic-coded)
+A Saiote girl in her mid 20s. She has trauma because she was raised in the First Realm (i.e. Tuscar
+territorry) where she tried to fit in but couldn't because she wasn't Tuscar, nor was she raised Tuscar.
+She was bullied because of this and was generally made to feel defective and worthless.
+
+Now she has developed a superiority complex. She has spent countless hours fixated researching
+how to use music, scents, appearances—basically everything- to control and manipulate
+the emotions of others, to make them feel what she wants them to feel. Because she never felt
+socially in control as a child, now she wants to control others.
+
+*** Taigtaig Magann
+A young Saiote girl (like 19 or 20). Has social anxiety and is a people-pleaser. Likes daydreaming and
+fantasizing. Is somewhat of a goody-two-shoes, but semi-secretly has a fascination with crime and
+violence.
+
+
+
+
+
+
+
+
+
 
 **** Appendix
 (setq org-superstar-headline-bullets-list
@@ -37,5 +77,4 @@ Body:
 (require 'sublimity-map)
 
 
-(setq 'default-frame-alist (delete '(background-color . *) 'default-frame-alist))
-
+(setq 'default-frame-alist (delete '(background-color . *) 'default-frame-alist

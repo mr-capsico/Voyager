@@ -1,6 +1,14 @@
 extends layout
 
 block content
-  div#main.box
-    h1 Character Name
-    p Character
+  div#all
+    div.left.box
+      p#bio=bio
+      p Competitions
+      p History
+    div.center
+      img#char(src=img)
+      div#centerbox.box
+        h1#name=name
+    div.right.box
+      p Interactions

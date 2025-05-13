@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Mentha",
+        "description": "A cool, refreshing herb\n+3 Energy, -1 Strength",
+        "img": "../images/items/mentha.png"
+    },
+    
+    {
+        "name": "Thyme",
+        "description": "An herb\n+3 Courage",
+        "img": "../images/items/thyme.png"
+    },
+    
+    {
+        "name": "Gladivs",
+        "description": "A common Tuscar sword\n2 Attack",
+        "img": "../images/items/gladius.png"
+    },
+    
+    {
+        "name": "Stave",
+        "description": "A Saiote weapon consisting of a large wooden pole\nMost effectively used by those who are strong or agile\n1 Attack +2 Range",
+        "img": "../images/items/quarterstaff.png"
+    }
+
+
+
+]

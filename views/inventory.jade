@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  div#infobox.box
+    p#info
+  div#main.box
+  script.
+    function genEntry(item) {
+      mb = document.querySelector("#main.box");
+      ent = document.createElement("div");
+      ent.className = "entry"
+
+      label = document.createElement("p");
+      label.className = "label"
+      label.innerText = item.name
+
+      // desc = document.createElement("p");
+      // desc.innerText = item.name
+
+      img = document.createElement("img");
+      img.onmouseover = function () {
+             document.querySelector("p#info").innerText = item.description
+             }
+      img.src = item.img
+
+      ent.appendChild(img);
+      ent.appendChild(label);
+      // ent.appendChild(desc);
+      mb.appendChild(ent);
+    }
+    async function genEntries() {
+      const response = await fetch('../json/items.json');
+      const json = await response.json();
+      for (i in json) {
+          genEntry(json[i])
+
+      }
+    }
+    genEntries()
